@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="../css/estilos/estilos2.css">
+    <title>FitMarket</title>
+</head>
+
+<body class="form-page-background">
+    <style>
+        body{
+            background-image: url(../css/estilos/imagenes/fondo.jpg);}
+        .btn-warning {
+            background-color: #E37A3D;
+            border-color: #E37A3D;
+        }
+            
+    </style>
+    <main class="d-flex flex-row justify-content-evenly flex-wrap">
+        <article class="card text-dark bg-light m-3 col-3">
+            <h3 class="card-header">Tarjeta</h3>
+            <div class="card-body">
+                <img src="/css/estilos/imagenes/WhatsApp Image 2023-11-17 at 6.35.20 PM (1).jpeg" class="imagen">
+                <h5 class="card-title">
+                    Light card title</h5>
+                <p class="card-text">Esto es un lorem ipsum</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver objeto
+                </button>
+            </div>
+        </article>
+        <article class="card text-dark bg-light m-3 col-3">
+            <h3 class="card-header">Tarjeta</h3>
+            <div class="card-body">
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Esto es un lorem ipsum</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver objeto
+                </button>
+            </div>
+        </article>
+        <article class="card text-dark bg-light m-3 col-3">
+            <h3 class="card-header">Tarjeta</h3>
+            <div class="card-body">
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Esto es un lorem ipsum</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver objeto
+                </button>
+            </div>
+        </article>
+        <article class="card text-dark bg-light m-3 col-3">
+            <h3 class="card-header">Tarjeta</h3>
+            <div class="card-body">
+                <h6 class="card-title">Descripción</h6>
+                <p class="card-text">Esto es un lorem ipsum</p>
+                <h6 class="card-title">Lugar donde se encontro</h6>
+                <p class="card-text">Esto es un lorem ipsum</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver objeto
+                </button>
+            </div>
+        </article>
+    </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning">Recoger objeto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="new_object_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nuevo Objeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="m-3">
+                            <label for="lost_object" aria-required="true">Nombre del objeto perdido: </label>
+                            <input type="text" id="lost_object">
+                        </div>
+                        <div class="m-3">
+                            <label for="description" aria-required="true">Descripción: </label>
+                            <input type="text" id="description">
+                        </div>
+                        <div class="m-3">
+                            <label for="found_place" aria-required="true">Lugar encontrado: </label>
+                            <input type="text" id="found_place">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning" id="add_object_button">Agregar objeto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-warning fixed-bottom" data-bs-toggle="modal" data-bs-target="#new_object_modal">Agregar objeto</button>
+    <script src="src/bussines_logic.js"></script>
+</body>
+</html>

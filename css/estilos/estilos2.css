@@ -1,0 +1,11 @@
+
+body    {
+    background-image: url(../estilos/imagenes/fondo.jpg);
+}
+.btn-warning form button{
+    background: #E37A3D;
+    outline: none;}
+
+.imagen{
+    width: auto;
+}
